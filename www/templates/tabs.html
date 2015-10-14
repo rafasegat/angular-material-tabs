@@ -1,0 +1,30 @@
+	<md-tabs md-dynamic-height="false" md-stretch-tabs="auto"  
+              md-selected="selectedIndex" md-align-tabs="bottom" 
+              flex layout="column" layout-fill >
+
+             <md-tab ui-sref="tab.shake">
+                  <md-tab-label>
+                        <i class="material-icons">home</i>
+                  </md-tab-label>
+             	<md-tab-body><md-tab-content class="md-padding" ui-view="tab-shake" layout-fill flex></md-tab-content></md-tab-body>
+             </md-tab> 
+             <md-tab ui-sref="tab.search">
+                  <md-tab-label>
+                        <i class="material-icons">search</i>
+                  </md-tab-label>
+             	<md-tab-content ui-view="tab-search"></md-tab-content>
+             </md-tab>
+             <md-tab ui-sref="tab.info">
+                  <md-tab-label>
+                        <i class="material-icons">info_outline</i>
+                  </md-tab-label>
+             	<md-tab-content ui-view="tab-info"></md-tab-content>
+             </md-tab>
+             <md-tab label="Config" ui-sref="tab.config">
+                  <md-tab-label>
+                        <i class="material-icons">settings</i>
+                  </md-tab-label>
+             	<md-tab-content ui-view="tab-config"></md-tab-content>
+             </md-tab>  
+
+        </md-tabs>
